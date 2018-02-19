@@ -1,0 +1,23 @@
+{
+  "id": 1,
+  "airline": "Mingle",
+  "flight_code": "MI-432",
+  "from": "Pune",
+  "to": "Bangalore",
+  "from_code": "PNQ",
+  "to_code": "BLR",
+  "depart": "MON 10:35",
+  "arrive": "MON 12:35",
+  "price": 1000,
+  "return_trip": {
+    "airline": "Mingle",
+    "flight_code": "MI-433",
+    "from": "Bangalore",
+    "to": "Pune",
+    "from_code": "BLR",
+    "to_code": "PNQ",
+    "depart": "TUE 13:20",
+    "arrive": "TUE 15:45",
+    "price": 1500
+  }
+}
