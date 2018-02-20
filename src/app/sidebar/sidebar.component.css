@@ -1,0 +1,44 @@
+.container {
+  margin: 50px 60px;
+
+}
+
+.type {
+  margin-left: 6px;
+}
+
+.type__one, .type__return {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid rgba(125,102,80,0.69);
+  border-radius: 3px;
+  padding: 5px 15px;
+  width: 95px;
+}
+
+.options {}
+
+.options__origin, .options__destination, .options__depdate, .options__passengers {
+  width: 180px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 15px;
+
+}
+
+.options__passengers:invalid {
+  color: gray;
+  width: 211px;
+  padding-left: 11px;
+}
+
+.search__button {
+  background-color: orangered;
+  color: #fff;
+  border: 1px solid rgba(125,102,80,0.69);
+  border-radius: 3px;
+  padding: 5px 15px;
+  width: 130px;
+  margin: 15px 40px;
+}

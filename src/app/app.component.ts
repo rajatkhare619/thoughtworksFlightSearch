@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {FlightService} from './flight.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  data: any;
+  constructor(private flightService: FlightService) {}
+
+  getData() {
+    this.flightService.getData()
+      .subscribe((data) => {
+      this.data = data;
+      });
+  }
 }
