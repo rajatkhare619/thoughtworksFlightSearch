@@ -4,3 +4,8 @@ app-sidebar {
   float: left;
   background-color: rgba(59,21,5,0.81);
 }
+
+app-main {
+  width: 60%;
+  float: right;
+}
