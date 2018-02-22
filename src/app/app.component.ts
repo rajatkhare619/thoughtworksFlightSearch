@@ -7,13 +7,17 @@ import {FlightService} from './flight.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  data: any;
+  searchData: any;
   constructor(private flightService: FlightService) {}
 
   getData() {
     this.flightService.getData()
       .subscribe((data) => {
-      this.data = data;
+      // this.data = data;
       });
+  }
+
+  updateMain(formData) {
+    this.searchData = formData;
   }
 }

@@ -4,15 +4,17 @@
     <button class="type__return">Return</button>
   </div>
   <div class="options">
-    <input type="text" placeholder="Enter Origin" class="options__origin">
-    <input type="text" placeholder="Enter Destination" class="options__destination">
-    <input type="text"  placeholder="Departure Date" onmouseenter="(this.type='date')" onmouseleave="(this.type='text')" class="options__depdate"/>
-    <select name="" id="" class="options__passengers" required>
+    <form (ngSubmit)="onSearch(f)" #f="ngForm" ngNativeValidate id="ngForm">
+    <input type="text" placeholder="Enter Origin ('Pune')" class="options__origin" ngModel name="origin">
+    <input type="text" placeholder="Enter Destination ('Bangalore')" class="options__destination" ngModel name="destination">
+    <input type="text"  placeholder="Date ('Select any date of Monday')" onmouseenter="(this.type='date')" onmouseleave="(this.type='text')" class="options__depdate" ngModel name="date"/>
+    <select name="" id="" class="options__passengers" required ngModel name="passengers">
       <option value="" disabled selected hidden>Passengers</option>
       <option value="1">1</option>
     </select>
+    </form>
   </div>
   <div class="search">
-    <button class="search__button">SEARCH</button>
+    <button class="search__button" type="submit" form="ngForm" >SEARCH</button>
   </div>
 </div>

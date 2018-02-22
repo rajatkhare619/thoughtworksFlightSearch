@@ -1,1 +1,4 @@
-<div appFlightdetails [color]="'blue'" [val]="50">sd</div>
+<div *ngFor="let flight of flightList">
+<app-flightdetails [oneWayCode]="flight.flight_code" [price]="flight.price" [from]="flight.from_code" [to]="flight.to_code"
+  [depart]="flight.depart" [arrive]="flight.arrive" [returnCode]="flight.return_trip.flight_code" [returnFrom]="flight.return_trip.from" [returnTo]="flight.return_trip.to" [returnDepart]="flight.return_trip.depart" [returnArrive]="flight.return_trip.arrive"></app-flightdetails>
+</div>

@@ -8,7 +8,8 @@ import {HttpModule} from '@angular/http';
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { MainComponent } from './main/main.component';
-import { FlightdetailsDirective } from './flightdetails.directive';
+import { FlightdetailsComponent } from './flightdetails/flightdetails.component';
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -17,11 +18,12 @@ import { FlightdetailsDirective } from './flightdetails.directive';
     HeaderComponent,
     SidebarComponent,
     MainComponent,
-    FlightdetailsDirective
+    FlightdetailsComponent
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    FormsModule
   ],
   providers: [FlightService],
   bootstrap: [AppComponent]

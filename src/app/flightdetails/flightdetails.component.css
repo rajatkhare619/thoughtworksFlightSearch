@@ -1,0 +1,45 @@
+.flightcontainer {
+  padding: 20px;
+  margin: 10px 10px;
+  border: solid 1px gray;
+  border-radius: 5px;
+  background: #f0eeee;
+}
+
+.flightcontainer__price {
+  font-size: x-large;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.flightcontainer__flight {
+  position: relative;
+}
+
+.flightcontainer__flight__flightdetails {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.flightcontainer__flight__flightdetails > p{
+  margin-bottom: 5px;
+}
+
+.flightcontainer__flight__flightdetails__fromto{
+  font-weight: bold;
+  font-size: small;
+}
+
+.flightcontainer__flight__flightdetails--book {
+  position: absolute;
+  display: inline-block;
+  right: 0;
+}
+
+.flightcontainer__flight__flightdetails--button {
+  color: #fff;
+  background-color: orangered;
+  border: 1px solid rgba(125,102,80,0.69);
+  padding: 5px 15px;
+  border-radius: 3px;
+}
